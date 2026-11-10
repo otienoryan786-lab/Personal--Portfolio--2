@@ -3,119 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Ryan Otieno, a Software Development student at Moringa School.">
+  <meta name="theme-color" content="#10231d">
+  <meta name="description" content="Ryan Otieno is a Software Development student at Moringa School learning to build thoughtful web experiences. Explore his projects and get in touch.">
   <title>Ryan Otieno | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER SECTION  -->
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#home" class="nav__logo">Ryan Otieno</a>
-      <ul class="nav__list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://github.com/otienoryan786-lab" class="nav__github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
+  <nav class="nav">
+      <a href="#home" class="nav__logo">Ryan Otieno</a>
+      <div class="nav__right">
+        <ul class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://github.com/otienoryan786-lab" class="nav__github" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+  </nav>
+
+  <header class="site-header">
     <div class="hero" id="home">
-      <img class="hero__image" src="assets/profile-photo.jpg" alt="Ryan Otieno in a suit and teal tie">
       <div class="hero__content">
-        <p class="hero__eyebrow">Software Development Student</p>
-        <h1 class="hero__title">Hello, I'm Ryan Otieno.</h1>
-        <p class="hero__subtitle">I’m learning to build useful, thoughtful web experiences at Moringa School.</p>
+        <p class="hero__eyebrow"><span class="hero__dot" aria-hidden="true"></span> Software Development Student <span class="hero__eyebrow-divider">/</span> Moringa School</p>
+        <h1 class="hero__title">Learning to build <span>useful things</span> for people and communities.</h1>
+        <p class="hero__subtitle">I’m Ryan, a software development student exploring the web one project at a time. I enjoy turning what I learn into clear, practical experiences.</p>
         <div class="hero__actions">
-          <a href="#projects" class="button">View My Projects</a>
-          <a href="https://github.com/otienoryan786-lab" class="button button--outline" target="_blank" rel="noopener noreferrer">My GitHub</a>
+          <a href="#projects" class="button">Explore my projects <span aria-hidden="true">↓</span></a>
+          <a href="mailto:otienoryan786@gmail.com" class="hero__text-link">Get in touch <span aria-hidden="true">↗</span></a>
         </div>
       </div>
+      <div class="hero__visual">
+        <div class="hero__image-frame">
+          <img class="hero__image" src="assets/profile-photo.jpg" alt="Ryan Otieno in a suit and teal tie">
+        </div>
+        <div class="hero__note">
+          <span class="hero__note-label">Currently</span>
+          <span>Learning, building &amp; growing</span>
+        </div>
+        <span class="hero__visual-mark" aria-hidden="true">RO<span>.</span></span>
+      </div>
     </div>
+    <div class="hero__bottom" aria-hidden="true"><span>Curious by nature</span><span class="hero__bottom-line"></span><span>Grounded in learning</span></div>
   </header>
 
-  <main>
+  <main id="main">
 
-    <!-- ABOUT ME -->
     <section class="section" id="about">
-      <h2 class="section__title">About Me</h2>
+      <div class="section__heading">
+        <p class="section__eyebrow">A little about me</p>
+        <h2 class="section__title">Building a foundation, one project at a time.</h2>
+      </div>
       <div class="about">
         <div class="about__text">
-          <p>
-            I am a student at Moringa School, where I am studying Software
-            Development. I am learning how to build websites, applications and 
-            Full Stack Development, and I do have an interest in learning how to make things with my own hands.
-          </p>
-          <p>
-            So far I have learned HTML, CSS, and JavaScript, and I am excited to keep
-            growing my skills and start building bigger projects, and hopefully become a Full Stack Developer.
-          </p>
+          <p>I’m studying Software Development at Moringa School, where I’m learning how to turn ideas into websites and applications. My projects are part of that journey: a chance to practice, solve problems and make something useful.</p>
+          <p>I’ve worked with HTML, CSS and JavaScript, and I’m continuing to grow my skills as I work toward becoming a full-stack developer.</p>
         </div>
 
         <div class="about__skills">
-          <h3>Skills I would gain in Moringa School</h3>
+          <h3>What I’m learning</h3>
+          <p class="about__skills-intro">Tools and skills I’ve been developing through my studies and projects.</p>
           <ul class="skills">
-            <li>Front End Development</li>
-            <li>Git & GitHub</li>
-            <li>Problem Solving</li>
-            <li> Back End Development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
+            <li>Problem solving</li>
           </ul>
+          <p class="skills__next"><span aria-hidden="true">↗</span> Growing toward full-stack development</p>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="section section--alt" id="projects">
-      <h2 class="section__title">My Projects</h2>
+      <div class="section__heading section__heading--projects">
+        <div>
+          <p class="section__eyebrow">Selected work</p>
+          <h2 class="section__title">Projects &amp; practice.</h2>
+        </div>
+        <p class="section__intro">A mix of hands-on learning and ideas brought to life. Each project is a step forward in my development journey.</p>
+      </div>
       <div class="projects">
 
+        <article class="card card--featured">
+          <div class="card__topline"><span class="card__number">01</span><span class="card__category">Web application</span></div>
+          <h3 class="card__title">Chama Ledger</h3>
+          <p class="card__text">
+            A browser-based record-keeping app for Kenyan chamas to track contributions, late fines, loans, welfare and expenses. Explore the demo to see searchable records and year-end share-out tools.
+          </p>
+          <div class="card__actions">
+            <a href="https://otienoryan786-lab.github.io/chama-ledger/" class="card__link card__link--primary" target="_blank" rel="noopener noreferrer">Explore live project <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/otienoryan786-lab/chama-ledger" class="card__link" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
         <article class="card">
+          <div class="card__topline"><span class="card__number">02</span><span class="card__category">HTML &amp; CSS</span></div>
           <h3 class="card__title">Personal Portfolio</h3>
           <p class="card__text">
-            This portfolio showcases the application of what I have been able to learn so far in terms of HTML and CSS is concerned
+            A personal website introducing who I am, the skills I’m developing and the projects I’ve created so far.
           </p>
-            <a href="https://github.com/otienoryan786-lab/Personal--Portfolio--2" class="card__link" target="_blank" rel="noopener noreferrer">View Project</a>
-
+          <div class="card__actions">
+            <a href="https://github.com/otienoryan786-lab/Personal--Portfolio--2" class="card__link" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
 
         <article class="card">
-          <h3 class="card__title">Adventures In Fire Island</h3>
+          <div class="card__topline"><span class="card__number">03</span><span class="card__category">HTML lab</span></div>
+          <h3 class="card__title">Adventures in Fire Island</h3>
           <p class="card__text">
-            An HTML lab: a travel blog page about Fire Island with a hero
-            section, a highlights list, an image gallery and a footer.
+            A travel blog page about Fire Island, featuring a hero section, highlights, an image gallery and a footer.
           </p>
-            <a href="https://github.com/otienoryan786-lab/HTML-LAB" class="card__link" target="_blank" rel="noopener noreferrer">View Project</a>
+          <div class="card__actions">
+            <a href="https://github.com/otienoryan786-lab/HTML-LAB" class="card__link" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
 
         <article class="card">
-            <h3 class="card__title">CSS Layouts</h3>
+          <div class="card__topline"><span class="card__number">04</span><span class="card__category">CSS lab</span></div>
+          <h3 class="card__title">CSS Layouts</h3>
           <p class="card__text">
-            This is a CSS Lab that was done to test the content that was learnt on 
-            using the Flexbox layout in CSS. I did manage to grasp the content and completed
-            the Lab.
+            A CSS lab focused on practicing Flexbox and building confidence with page layout.
           </p>
-            <a href="https://github.com/otienoryan786-lab/phase-0-js-css-layouts-lab" class="card__link" target="_blank" rel="noopener noreferrer">View Project</a>
-
+          <div class="card__actions">
+            <a href="https://github.com/otienoryan786-lab/phase-0-js-css-layouts-lab" class="card__link" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </article>
 
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
-      <p class="contact__text">I am a very flexible person who is willing to learn, grow and provide a meaningful impact
-        to not only myself but also to society. In case of any enquiries, feel free to reach out to me.
-      </p>
-      <ul class="contact__list">
-        <li><a href="mailto:otienoryan786@gmail.com">otienoryan786@gmail.com</a></li>
-          <li><a href="tel:+254112816303">+254 112 816 303</a></li>
-      </ul>
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <div>
+          <p class="section__eyebrow">Say hello</p>
+          <h2 class="contact__title">Let’s connect.</h2>
+          <p class="contact__text">Have a question or want to talk about a project? I’d be glad to hear from you.</p>
+        </div>
+        <div class="contact__links">
+          <a class="contact__email" href="mailto:otienoryan786@gmail.com">otienoryan786@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="contact__phone" href="tel:+254112816303">+254 112 816 303</a>
+        </div>
+      </div>
     </section>
 
   </main>
 
+  <footer class="footer">
+    <a href="#home" class="footer__logo">Ryan Otieno<span>.</span></a>
+    <p>Software Development student at Moringa School</p>
+    <a class="footer__github" href="https://github.com/otienoryan786-lab" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    <span class="footer__copy">© 2026 Ryan Otieno</span>
+  </footer>
+
 </body>
 </html>
-
